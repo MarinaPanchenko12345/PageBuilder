@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(226, 224, 224);
+}
+.myDiv {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.myAside {
+  width: 25vw;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: white;
+}
+.newDiv {
+  margin: 80px 150px 0px;
+  box-shadow: 2px 3px 4px 6px rgb(186, 182, 182);
+  width: 55vw;
+  height: 90vh;
+}
+p,
+label,
+button {
+  margin-top: 20px;
+}
+h1 {
+  font-size: 3.2rem;
+}
+p {
+  font-size: 1.4rem;
+}
+input {
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+}
+button {
+  width: 150px;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  -webkit-text-stroke: 0.1px rgba(241, 16, 16, 0.978);
+}
+@media screen and (max-width: 680px) {
+  .myDiv {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+  }
+  .myAside {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+  }
+  .newDiv {
+    width: 86vw;
+    height: 45vh;
+    margin: 15px auto;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
